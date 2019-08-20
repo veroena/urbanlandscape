@@ -1,0 +1,330 @@
+/* * {
+  box-sizing: border-box;
+} */
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+.wrapper {
+  padding: 30px 18%;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 500px;
+}
+
+.background {
+  height: 100vh;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  background-image: url(images/max-zhiltsov-RB9VeeP8bsg-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.content {
+  width: 100%;
+  padding-top: 100vh;
+  position: relative;
+  z-index:3;
+}
+
+/* BLOCK0 --------------------------------------------------------------------- */
+
+.block0 {
+  position: absolute;
+  top: 22%;
+  width: 100%;
+  z-index: 5;
+  min-height: 300px;
+}
+
+.block0 .wrapper {
+  background-color: transparent;
+  text-align: center;
+}
+
+.block0__title {
+  color: white;
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+.block0__description {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #a9a9a9;
+}
+
+/* END BLOCK0 --------------------------------------------------------------------- */
+
+
+
+
+/* BLOCK1 --------------------------------------------------------------------- */
+
+.block1__above-title {
+  font-family: 'Questrial', sans-serif;
+  text-transform: uppercase;
+}
+
+.block1__title {
+  font-family: 'Questrial', sans-serif;
+  text-transform: uppercase;
+}
+
+.block1__text {
+  font-family: 'Monda', sans-serif;
+  text-align: justify;
+}
+
+.block1__link--container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.block1__link {
+  text-decoration: none;
+  color: white;
+  padding: 7px 30px;
+  border-radius: 50px;
+  background-color: #6a6c6e;
+  font-family: 'Monda', sans-serif;
+  font-size: 18px;
+  border: solid 2px transparent;
+  transition: ease 0.1s;
+  margin-bottom: 10px;
+}
+
+.block1__link:hover {
+  color: #6a6c6e;
+  background-color: white;
+  border: solid 2px #6a6c6e;
+}
+
+.block1__link--icon {
+  margin-left: 5px;
+}
+
+/* END BLOCK1 --------------------------------------------------------------------- */
+
+
+
+
+/* BLOCK2 --------------------------------------------------------------------- */
+
+.block2__title {
+  font-family: 'Questrial', sans-serif;
+  text-transform: uppercase;
+}
+
+.block2__card--container {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.block2__card {
+  height: 400px;
+  width: 350px;
+  margin: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.card1 {
+  background-image: url(images/erickson-javier-RW7TrDwdqpk-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card2 {
+  background-image: url(images/guowen-sui-8GJ33-5AO-Y-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card3 {
+  background-image: url(images/ryan-loughlin-_2z0xIF4Lx4-unsplash.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.block2__card--content {
+  position: absolute;
+  width: 100%;
+  top: 68%;
+  transition: ease 0.7s;
+}
+
+.block2__card--content:hover {
+  top: -5.5%;
+  background-color: white;
+}
+
+.block2__card--content::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 65px solid white;
+  border-left: 350px solid transparent;
+}
+
+.block2__card--title {
+  background-color: white;
+  margin: 0;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Questrial', sans-serif;
+  text-transform: uppercase;
+}
+
+
+.block2__card--text-container {
+  height: 188px;
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  background-color: white;
+  padding: 0 1em;
+}
+
+.block2__card--text {
+  font-family: 'Monda', sans-serif;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.block2__card--link-container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+.block2__card--link {
+  text-decoration: none;
+  color: #a9a9a9;
+  font-size: 43px;
+  padding: 7px 11px 4px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: ease 0.2s;
+}
+
+.block2__card--link:hover {
+  color: white;
+  background-color: #a9a9a9;
+}
+
+/* END BLOCK2 --------------------------------------------------------------------- */
+
+
+
+
+/* BLOCK3 --------------------------------------------------------------------- */
+
+.block3 .wrapper {
+  margin-bottom: 50px;
+  background-color: transparent;
+}
+
+.block3__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block3__list--item {
+  margin: 0 20px;
+}
+
+.block3__list--link {
+  text-decoration: none;
+  color: #6a6c6e;
+  font-size: 32px;
+}
+
+.block3__copyright {
+  font-family: 'Monda', sans-serif;
+  color: #6a6c6e;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* END BLOCK3 --------------------------------------------------------------------- */
+
+@media all and (min-width: 768px) {
+  .block2__card--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
+.block3__contact {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 30px;
+  font-style: italic;
+  color: #fff;
+  padding: 10px 15px;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: flicker 2s infinite alternate;
+}
+
+.block3__contact::-moz-selection {
+  background-color: #08f;
+  color: #f40;
+}
+
+.block3__contact::selection {
+  background-color: #08f;
+  color: #f40;
+}
+
+.block3__contact:focus {
+  outline: none;
+}
+
+@keyframes flicker {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      
+        text-shadow:
+            -0.2px -0.2px 1px #fff,
+            0.2px 0.2px 1px #fff,
+            0 0 2px #f40,
+            0 0 4px #f40,
+            0 0 6px #f40,
+            0 0 8px #f40,
+            0 0 10px #f40;
+        
+        box-shadow:
+            0 0 1px #fff,
+            inset 0 0 1px #fff,
+            0 0 4px #08f,
+            inset 0 0 4px #08f,
+            0 0 4px #08f,
+            inset 0 0 8px #08f;        
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }    
+}
