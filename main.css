@@ -33,7 +33,7 @@ body {
 
 .header {
   position: absolute;
-  top: 22%;
+  top: 50vh;
   width: 100%;
   z-index: 3;
 }
@@ -41,18 +41,20 @@ body {
 .header .wrapper {
   background-color: transparent;
   text-align: center;
+  padding: 30px 5%;
+  margin-bottom: 0;
 }
 
 .header__title {
   color: white;
   font-family: 'Lexend Giga', sans-serif;
-  font-size: 80px;
+  font-size: 35px;
   text-transform: uppercase;
 }
 
 .header__description {
   font-family: 'Lexend Giga', sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #a9a9a9;
 }
@@ -130,7 +132,7 @@ body {
   margin: 0 auto;
   padding: 0;
   display: grid;
-  grid-template-columns: 350px;
+  grid-template-columns: 300px;
   grid-gap: 30px;
 }
 
@@ -196,7 +198,7 @@ body {
   width: 0;
   height: 0;
   border-bottom: 65px solid white;
-  border-left: 350px solid transparent;
+  border-left: 300px solid transparent;
 }
 
 .block2__card--title {
@@ -256,7 +258,10 @@ body {
 .footer .wrapper {
   margin-bottom: 50px;
   background-color: transparent;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__list {
@@ -270,6 +275,11 @@ body {
 
 .footer__list--item {
   margin: 0 20px;
+  transition: ease 0.5s;
+}
+
+.footer__list--item:hover{
+  transform: scale(1.25);
 }
 
 .footer__list--link {
@@ -286,7 +296,6 @@ body {
 }
 
 .footer__contact {
-  position: absolute;
   font-family: 'Exo 2', sans-serif;
   font-size: 30px;
   font-style: italic;
@@ -294,23 +303,9 @@ body {
   padding: 10px 15px;
   border: 3px solid #fff;
   border-radius: 15px;
-  display: inline-block;
   text-transform: uppercase;
+  margin-bottom: 35px;
   animation: flicker 2s infinite alternate;
-}
-
-.footer__contact::-moz-selection {
-  background-color: #08f;
-  color: #f40;
-}
-
-.footer__contact::selection {
-  background-color: #08f;
-  color: #f40;
-}
-
-.footer__contact:focus {
-  outline: none;
 }
 
 @keyframes flicker {
@@ -343,8 +338,14 @@ body {
 
 
 @media all and (min-width: 768px) {
+  .header__title {
+    font-size: 44px;
+  }
+  .header__description {
+    font-size: 22px;
+  }
+
   .block2__card--list {
-    display: grid;
     grid-template-columns: 320px 320px;
   }
   .block2__card--content::before {
@@ -354,7 +355,6 @@ body {
 
 @media all and (min-width: 900px) {
   .block2__card--list {
-    display: grid;
     grid-template-columns: 350px 350px;
   }
   .block2__card--content::before {
@@ -364,8 +364,14 @@ body {
 
 
 @media all and (min-width: 1200px) {
+  .header__title {
+    font-size: 70px;
+  }
+  .header__description {
+    font-size: 25px;
+  }
+
   .block2__card--list {
-    display: grid;
     grid-template-columns: 330px 330px 330px;
   }
   .block2__card--content::before {
@@ -375,7 +381,6 @@ body {
 
 @media all and (min-width: 1300px) {
   .block2__card--list {
-    display: grid;
     grid-template-columns: 350px 350px 350px;
   }
   .block2__card--content::before {
@@ -384,8 +389,14 @@ body {
 }
 
 @media all and (min-width: 1500px) {
+  .header__title {
+    font-size: 80px;
+  }
+  .header__description {
+    font-size: 40px;
+  }
+
   .block2__card--list {
-    display: grid;
     grid-template-columns: 380px 380px 380px;
   }
   .block2__card--content::before {
