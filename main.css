@@ -1,6 +1,3 @@
-/* * {
-  box-sizing: border-box;
-} */
 
 body {
   margin: 0;
@@ -11,6 +8,8 @@ body {
   padding: 30px 18%;
   background-color: rgba(255, 255, 255, 0.8);
   margin-bottom: 500px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .background {
@@ -30,36 +29,35 @@ body {
   z-index:3;
 }
 
-/* BLOCK0 --------------------------------------------------------------------- */
+/* HEADER --------------------------------------------------------------------- */
 
-.block0 {
+.header {
   position: absolute;
   top: 22%;
   width: 100%;
-  z-index: 5;
-  min-height: 300px;
+  z-index: 3;
 }
 
-.block0 .wrapper {
+.header .wrapper {
   background-color: transparent;
   text-align: center;
 }
 
-.block0__title {
+.header__title {
   color: white;
   font-family: 'Lexend Giga', sans-serif;
   font-size: 80px;
   text-transform: uppercase;
 }
 
-.block0__description {
+.header__description {
   font-family: 'Lexend Giga', sans-serif;
   font-size: 30px;
   text-transform: uppercase;
   color: #a9a9a9;
 }
 
-/* END BLOCK0 --------------------------------------------------------------------- */
+/* END HEADER --------------------------------------------------------------------- */
 
 
 
@@ -117,21 +115,28 @@ body {
 
 /* BLOCK2 --------------------------------------------------------------------- */
 
-.block2__title {
-  font-family: 'Questrial', sans-serif;
-  text-transform: uppercase;
+.block2 .wrapper {
+  padding: 80px 10%;
 }
 
-.block2__card--container {
+.block2__list--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block2__card--list {
   list-style: none;
   margin: 0 auto;
   padding: 0;
+  display: grid;
+  grid-template-columns: 350px;
+  grid-gap: 30px;
 }
 
 .block2__card {
   height: 400px;
-  width: 350px;
-  margin: 30px;
+  /* width: 350px; */
   overflow: hidden;
   position: relative;
 }
@@ -151,6 +156,24 @@ body {
 
 .card3 {
   background-image: url(images/ryan-loughlin-_2z0xIF4Lx4-unsplash.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.card4 {
+  background-image: url(images/darren-chan-0nHOfjH0emE-unsplash.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.card5 {
+  background-image: url(images/hector-j-rivas-fvl7oftGJ_8-unsplash.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.card6 {
+  background-image: url(images/randhi-mahardhika-Q0aDpCw1ULk-unsplash.jpg);
   background-size: cover;
   background-position: top;
 }
@@ -189,7 +212,7 @@ body {
 .block2__card--text-container {
   height: 188px;
   text-overflow: ellipsis;
-  overflow: hidden; 
+  overflow: hidden;
   background-color: white;
   padding: 0 1em;
 }
@@ -228,14 +251,15 @@ body {
 
 
 
-/* BLOCK3 --------------------------------------------------------------------- */
+/* FOOTER --------------------------------------------------------------------- */
 
-.block3 .wrapper {
+.footer .wrapper {
   margin-bottom: 50px;
   background-color: transparent;
+  position: relative;
 }
 
-.block3__list {
+.footer__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -244,37 +268,25 @@ body {
   align-items: center;
 }
 
-.block3__list--item {
+.footer__list--item {
   margin: 0 20px;
 }
 
-.block3__list--link {
+.footer__list--link {
   text-decoration: none;
   color: #6a6c6e;
   font-size: 32px;
 }
 
-.block3__copyright {
+.footer__copyright {
   font-family: 'Monda', sans-serif;
   color: #6a6c6e;
   text-align: center;
   font-size: 12px;
 }
 
-/* END BLOCK3 --------------------------------------------------------------------- */
-
-@media all and (min-width: 768px) {
-  .block2__card--container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-
-
-
-.block3__contact {
+.footer__contact {
+  position: absolute;
   font-family: 'Exo 2', sans-serif;
   font-size: 30px;
   font-style: italic;
@@ -287,44 +299,96 @@ body {
   animation: flicker 2s infinite alternate;
 }
 
-.block3__contact::-moz-selection {
+.footer__contact::-moz-selection {
   background-color: #08f;
   color: #f40;
 }
 
-.block3__contact::selection {
+.footer__contact::selection {
   background-color: #08f;
   color: #f40;
 }
 
-.block3__contact:focus {
+.footer__contact:focus {
   outline: none;
 }
 
 @keyframes flicker {
-    
-    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-      
-        text-shadow:
-            -0.2px -0.2px 1px #fff,
-            0.2px 0.2px 1px #fff,
-            0 0 2px #f40,
-            0 0 4px #f40,
-            0 0 6px #f40,
-            0 0 8px #f40,
-            0 0 10px #f40;
-        
-        box-shadow:
-            0 0 1px #fff,
-            inset 0 0 1px #fff,
-            0 0 4px #08f,
-            inset 0 0 4px #08f,
-            0 0 4px #08f,
-            inset 0 0 8px #08f;        
-    }
-    
-    20%, 24%, 55% {        
-        text-shadow: none;
-        box-shadow: none;
-    }    
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow:
+      0 0 2px #f40,
+      0 0 4px #f40,
+      0 0 6px #f40,
+      0 0 8px #f40,
+      0 0 10px #f40;
+
+    box-shadow:
+        0 0 4px #08f,
+        inset 0 0 4px #08f,
+        0 0 8px #08f,
+        inset 0 0 8px #08f;
+  }
+
+  20%, 24% {
+    text-shadow: none;
+    box-shadow: none;
+  }
+}
+
+/* END FOOTER --------------------------------------------------------------------- */
+
+
+
+/* MEDIA QUERIES --------------------------------------------------------------------- */
+
+
+@media all and (min-width: 768px) {
+  .block2__card--list {
+    display: grid;
+    grid-template-columns: 320px 320px;
+  }
+  .block2__card--content::before {
+    border-left: 320px solid transparent;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .block2__card--list {
+    display: grid;
+    grid-template-columns: 350px 350px;
+  }
+  .block2__card--content::before {
+    border-left: 350px solid transparent;
+  }
+}
+
+
+@media all and (min-width: 1200px) {
+  .block2__card--list {
+    display: grid;
+    grid-template-columns: 330px 330px 330px;
+  }
+  .block2__card--content::before {
+    border-left: 330px solid transparent;
+  }
+}
+
+@media all and (min-width: 1300px) {
+  .block2__card--list {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+  }
+  .block2__card--content::before {
+    border-left: 350px solid transparent;
+  }
+}
+
+@media all and (min-width: 1500px) {
+  .block2__card--list {
+    display: grid;
+    grid-template-columns: 380px 380px 380px;
+  }
+  .block2__card--content::before {
+    border-left: 380px solid transparent;
+  }
 }
