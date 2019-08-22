@@ -21,12 +21,12 @@ body {
   background-attachment: fixed;
 }
 
-.bg1{
-  background-image: url(images/max-zhiltsov-RB9VeeP8bsg-unsplash.jpg);
+.bg1 {
+  background-image: url(images/maxime-caron-iVhmp3iQJPA-unsplash.jpg);
 }
 
-.bg2 {
-  background-image: url(images/maxime-caron-iVhmp3iQJPA-unsplash.jpg);
+.bg2{
+  background-image: url(images/max-zhiltsov-RB9VeeP8bsg-unsplash.jpg);
 }
 
 .content {
@@ -63,7 +63,7 @@ body {
   font-family: 'Lexend Giga', sans-serif;
   font-size: 20px;
   text-transform: uppercase;
-  color: #a9a9a9;
+  color: white;
 }
 
 /* END HEADER --------------------------------------------------------------------- */
