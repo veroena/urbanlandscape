@@ -17,9 +17,16 @@ body {
   z-index: 1;
   position: fixed;
   width: 100%;
-  background-image: url(images/max-zhiltsov-RB9VeeP8bsg-unsplash.jpg);
   background-size: cover;
   background-attachment: fixed;
+}
+
+.bg1{
+  background-image: url(images/max-zhiltsov-RB9VeeP8bsg-unsplash.jpg);
+}
+
+.bg2 {
+  background-image: url(images/maxime-caron-iVhmp3iQJPA-unsplash.jpg);
 }
 
 .content {
