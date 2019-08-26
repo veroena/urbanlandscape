@@ -81,7 +81,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 50vh;
+  height: 48.1vh;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
   background-blend-mode: multiply;
@@ -418,6 +418,9 @@ body {
   }
   .header__description {
     font-size: 25px;
+  }
+  .header__title--container::after {
+    height: 46.4vh;
   }
 
   .block2__card--list {
