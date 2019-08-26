@@ -31,15 +31,14 @@ const scrolling = () => {
 window.addEventListener('scroll', scrolling);
 
 
-
-
-var images = new Array()
+var images = [];
 function preload() {
-  for (i = 0; i < preload.arguments.length; i++) {
-    images[i] = new Image()
-    images[i].src = preload.arguments[i]
-  }
+    for (let i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
 }
+
 preload(
   "images/maxime-caron-iVhmp3iQJPA-unsplash.jpg",
   "images/max-zhiltsov-RB9VeeP8bsg-unsplash.jpg",
