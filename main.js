@@ -1,5 +1,3 @@
-'use strict';
-
 const background = document.querySelector('.background');
 let test = document.getElementById("body").scrollHeight;
 let mitadScroll = test/2;
