@@ -1,7 +1,5 @@
 'use strict';
 
-// ----------------------- CHANGE IMAGE ON SCROLL POSITION -------------------------------------
-
 const background = document.querySelector('.background');
 let test = document.getElementById("body").scrollHeight;
 let mitadScroll = test/2;
@@ -17,10 +15,17 @@ const changePic = () => {
   }
 }
 
-window.addEventListener('scroll', changePic);
+const progress = () => {
+  const windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var heightScroll = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (windowScroll / heightScroll) * 100;
+  document.getElementById("progress__bar").style.height = scrolled + "%";
+}
+
+const scrolling = () => {
+  changePic();
+  progress();
+}
 
 
-// ----------------------- IMAGE PRELOAD -------------------------------------
-
-
-
+window.addEventListener('scroll', scrolling);
