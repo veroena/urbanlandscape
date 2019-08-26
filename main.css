@@ -51,8 +51,6 @@ body {
   width: 8px;
   background-color: rgba(169, 169, 169, 0.7);
   border-radius: 50px;
-  /* margin-bottom: 5px;
-  max-height: 97%; */
 }
 
 .content {
@@ -165,6 +163,7 @@ body {
 
 .block2 .wrapper {
   padding: 80px 10%;
+  background-color: white;
 }
 
 .block2__list--container {
