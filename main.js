@@ -17,7 +17,7 @@ const progress = () => {
   const windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var heightScroll = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (windowScroll / heightScroll) * 100;
-  document.getElementById("progress__bar").style.height = scrolled + "%";
+  document.getElementById("progress__bar").style.width = scrolled + "%";
 }
 
 const scrolling = () => {

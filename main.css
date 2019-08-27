@@ -31,27 +31,19 @@ body {
 
 .progress {
   position: fixed;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  right: 1%;
-  height: 25%;
-  width: 16px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50px;
-  z-index: 5;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 5px 0;
-  box-sizing: border-box;
+  width: 100vw;
+  height: 8px;
+  top: 0;
+  left: 0;
+  z-index: 6;
 }
 
 .progress__bar {
-  height: 0%;
-  width: 8px;
-  background-color: rgba(169, 169, 169, 0.7);
-  border-radius: 50px;
+  height: 100%;
+  width: 0%;
+  background-color: rgb(110, 107, 107);
 }
+
 
 .content {
   width: 100%;
